@@ -438,21 +438,32 @@ details p {
 }
 
 .footer-section {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
+  display: grid;
+  gap: 28px;
   width: min(100% - 32px, 1180px);
   margin: 0 auto;
-  padding: 34px 0 46px;
+  padding: 42px 0 48px;
   border-top: 1px solid var(--line);
+  text-align: center;
 }
 
-.footer-section h2 {
+.footer-brand h2 {
   margin: 0;
   color: var(--text);
-  font-size: clamp(24px, 5vw, 34px);
+  font-size: clamp(30px, 8vw, 44px);
   line-height: 1.1;
+}
+
+.footer-brand p {
+  max-width: 360px;
+  margin: 12px auto 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.footer-contact {
+  display: grid;
+  justify-items: stretch;
 }
 
 .footer-button {
@@ -460,18 +471,38 @@ details p {
   align-items: center;
   justify-content: center;
   gap: 10px;
-  min-height: 46px;
-  padding: 0 18px;
+  min-height: 48px;
+  width: 100%;
+  padding: 0 20px;
   border: 1px solid rgba(62, 231, 214, 0.34);
   border-radius: 8px;
   color: var(--text);
   background: rgba(62, 231, 214, 0.08);
   font-weight: 800;
   text-decoration: none;
+  transition:
+    border-color 180ms ease,
+    background 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.footer-button:hover {
+  border-color: rgba(62, 231, 214, 0.58);
+  background: rgba(62, 231, 214, 0.12);
+  box-shadow: 0 0 28px rgba(62, 231, 214, 0.11);
 }
 
 .footer-button svg {
   color: var(--cyan);
+}
+
+.footer-copyright {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.footer-copyright {
+  margin: 0;
 }
 
 :focus-visible {
@@ -488,8 +519,6 @@ details p {
 
   .footer-section {
     width: min(100% - 32px, 356px);
-    align-items: flex-start;
-    flex-direction: column;
   }
 
   .hero-name {
@@ -499,6 +528,33 @@ details p {
   .hero-visual {
     aspect-ratio: auto;
     height: clamp(210px, 34svh, 250px);
+  }
+}
+
+@media (min-width: 700px) {
+  .footer-section {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    text-align: left;
+  }
+
+  .footer-brand p {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .footer-contact {
+    justify-items: end;
+    min-width: 180px;
+  }
+
+  .footer-button {
+    width: auto;
+    min-width: 160px;
+  }
+
+  .footer-copyright {
+    grid-column: 1 / -1;
   }
 }
 

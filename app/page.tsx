@@ -327,11 +327,17 @@ export default function Home() {
       </section>
 
       <footer className="footer-section" aria-labelledby="footer-title">
-        <h2 id="footer-title">Reach Out</h2>
-        <a className="footer-button" href="mailto:MelosClaw@gasgpt.com">
-          <Mail size={18} aria-hidden="true" />
-          Inquiry
-        </a>
+        <div className="footer-brand">
+          <h2 id="footer-title">MelosClaw</h2>
+          <p>AI-native identity for the emerging autonomous economy.</p>
+        </div>
+        <div className="footer-contact">
+          <a className="footer-button" href="mailto:MelosClaw@gasgpt.com">
+            <Mail size={18} aria-hidden="true" />
+            Reach Out
+          </a>
+        </div>
+        <p className="footer-copyright">© 2026 MelosClaw</p>
       </footer>
     </main>
   );
