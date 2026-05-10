@@ -7,6 +7,7 @@ import {
   Fingerprint,
   Globe2,
   Layers3,
+  Mail,
   Network,
   Radar,
   Route,
@@ -19,7 +20,7 @@ const identitySignals = [
   {
     icon: BrainCircuit,
     label: "Autonomous Agent Intelligence",
-    text: "MelosClaw is shaped for systems that reason, coordinate, and execute across digital work — not just respond to prompts.",
+    text: "MelosClaw is shaped for systems that reason, coordinate, and execute across digital work, not just respond to prompts.",
   },
   {
     icon: Network,
@@ -29,16 +30,15 @@ const identitySignals = [
   {
     icon: Blocks,
     label: "Skill-Native Infrastructure",
-    text: "The MelosClaw identity is built around curated agent-skill ecosystems   where reusable capabilities become durable product surface.",
+    text: "The MelosClaw identity is built around curated agent-skill ecosystems where reusable capabilities become durable product surface.",
   },
 ];
-
 
 const thesisPoints = [
   {
     icon: BrainCircuit,
     title: "Agentic intelligence",
-    text: "MelosClaw frames intelligence as active infrastructure — systems that plan, use tools, delegate subtasks, and coordinate toward real outcomes.",
+    text: "MelosClaw frames intelligence as active infrastructure: systems that plan, use tools, delegate subtasks, and coordinate toward real outcomes.",
   },
   {
     icon: Network,
@@ -88,7 +88,7 @@ const faqs = [
   {
     question: "What is MelosClaw?",
     answer:
-      "MelosClaw is an AI-native domain identity built for autonomous agent intelligence - systems that can coordinate work, compose skills, and operate across Web3-enabled infrastructure. Melos Claw represents the category before it has a canonical name.",
+      "MelosClaw is an AI-native domain identity built for autonomous agent intelligence: systems that can coordinate work, compose skills, and operate across Web3-enabled infrastructure. Melos Claw represents the category before it has a canonical name.",
   },
   {
     question: "What does MelosClaw.com represent?",
@@ -98,7 +98,7 @@ const faqs = [
   {
     question: "How is MelosClaw connected to AI agents?",
     answer:
-      "The Melos Claw name is positioned around agentic systems that move beyond chat into planning, execution, tool use, skill reuse, and networked coordination - the infrastructure layer of the AI economy.",
+      "The Melos Claw name is positioned around agentic systems that move beyond chat into planning, execution, tool use, skill reuse, and networked coordination: the infrastructure layer of the AI economy.",
   },
   {
     question: "Why does the .com matter for MelosClaw?",
@@ -108,7 +108,7 @@ const faqs = [
   {
     question: "Is MelosClaw only about Web3?",
     answer:
-      "No. Web3 is one important context for Melos Claw because it adds identity, ownership, settlement, and programmable coordination. The broader concept behind MelosClaw is autonomous agent intelligence for digital work networks - Web3 is one powerful execution layer, not the whole story.",
+      "No. Web3 is one important context for Melos Claw because it adds identity, ownership, settlement, and programmable coordination. The broader concept behind MelosClaw is autonomous agent intelligence for digital work networks.",
   },
 ];
 
@@ -119,7 +119,7 @@ const jsonLd = [
     name: "MelosClaw",
     url: "https://melosclaw.com",
     description:
-      "MelosClaw is a strategic .com identity for autonomous AI agents, Web3 work networks, and skill-native infrastructure. Melos Claw for the AI-native economy.",
+      "MelosClaw is a strategic .com identity for autonomous AI agents, Web3 work networks, and skill-native infrastructure.",
     inLanguage: "en",
     publisher: {
       "@type": "Organization",
@@ -159,7 +159,7 @@ export default function Home() {
           <div className="hero-copy">
             <p className="eyebrow">
               <Sparkles size={16} aria-hidden="true" />
-              Strategic AI Agent Domain identity
+              Strategic AI Agent Domain Identity
             </p>
             <h1 id="hero-title">
               <span className="hero-name">MelosClaw</span>
@@ -167,7 +167,8 @@ export default function Home() {
             </h1>
             <p className="hero-lede">
               A strategic .com identity for autonomous agents, reusable skill networks,
-              and Web3 work infrastructure. Melos Claw positions a serious builder at the center of the Web3 AI-native economy.
+              and Web3 work infrastructure. Melos Claw positions a serious builder at
+              the center of the Web3 AI-native economy.
             </p>
             <div className="hero-signals" aria-label="MelosClaw strategic signals">
               <span>Autonomous agents</span>
@@ -189,18 +190,18 @@ export default function Home() {
         </div>
       </section>
 
-<section className="identity-strip" aria-label="MelosClaw identity signals">
-  {identitySignals.map((signal) => {
-    const Icon = signal.icon;
-    return (
-      <article key={signal.label}>
-        <Icon size={24} aria-hidden="true" />
-        <h2>{signal.label}</h2>
-        <p>{signal.text}</p>
-      </article>
-    );
-  })}
-</section>
+      <section className="identity-strip" aria-label="MelosClaw identity signals">
+        {identitySignals.map((signal) => {
+          const Icon = signal.icon;
+          return (
+            <article key={signal.label}>
+              <Icon size={24} aria-hidden="true" />
+              <h2>{signal.label}</h2>
+              <p>{signal.text}</p>
+            </article>
+          );
+        })}
+      </section>
 
       <section className="section thesis-section" aria-labelledby="thesis-title">
         <div className="section-intro">
@@ -210,7 +211,7 @@ export default function Home() {
           </h2>
           <p>
             Melos Claw is positioned as an identity layer for autonomous agent
-            intelligence — memorable, category-aware, and broad enough to anchor
+            intelligence: memorable, category-aware, and broad enough to anchor
             a product, protocol, ecosystem, or research-backed platform. A strong
             domain thesis means the name does strategic work before a single line
             of code is written.
@@ -260,7 +261,10 @@ export default function Home() {
             <span className="gradient-text">MelosClaw</span> gives the category a name with rhythm, precision, and infrastructure depth.
           </h2>
           <p>
-            Melos Claw blends orchestration with execution. "Melos" suggests composedintelligence and coordinated systems — structured, purposeful, multi-step."Claw" adds precision, agency, and decisive action. Together, MelosClawlands as a name that feels earned rather than invented.
+            Melos Claw blends orchestration with execution. Melos suggests composed
+            intelligence and coordinated systems: structured, purposeful, multi-step.
+            Claw adds precision, agency, and decisive action. Together, MelosClaw
+            lands as a name that feels earned rather than invented.
           </p>
         </div>
         <div className="positioning-panel">
@@ -275,12 +279,14 @@ export default function Home() {
 
       <section className="section architecture-section" aria-labelledby="architecture-title">
         <p className="section-kicker">Brand Architecture</p>
-        <h2 id="architecture-title">One <span className="gradient-text">MelosClaw</span> identity. Four durable signals.</h2>
+        <h2 id="architecture-title">
+          One <span className="gradient-text">MelosClaw</span> identity. Four durable signals.
+        </h2>
         <div className="architecture-grid">
           <article>
             <Globe2 size={24} aria-hidden="true" />
             <h3>.com authority</h3>
-            <p>MelosClaw holds the globally legible trust layer for a serious AI   and Web3 category name — no extension compromise required.</p>
+            <p>MelosClaw holds the globally legible trust layer for a serious AI and Web3 category name.</p>
           </article>
           <article>
             <CircuitBoard size={24} aria-hidden="true" />
@@ -290,7 +296,7 @@ export default function Home() {
           <article>
             <Route size={24} aria-hidden="true" />
             <h3>Workflow narrative</h3>
-            <p>MelosClaw has clear fit for agent systems that plan, route, validate,   and execute across distributed digital work environments.</p>
+            <p>MelosClaw has clear fit for agent systems that plan, route, validate, and execute across distributed digital work environments.</p>
           </article>
           <article>
             <Compass size={24} aria-hidden="true" />
@@ -303,7 +309,9 @@ export default function Home() {
       <section className="section faq-section" aria-labelledby="faq-title">
         <div className="faq-heading">
           <p className="section-kicker">MelosClaw FAQ</p>
-          <h2 id="faq-title">Questions about <span className="gradient-text">MelosClaw</span> - the identity, concept, and positioning.</h2>
+          <h2 id="faq-title">
+            Questions about <span className="gradient-text">MelosClaw</span>: the identity, concept, and positioning.
+          </h2>
         </div>
         <div className="faq-list">
           {faqs.map((faq) => (
@@ -318,6 +326,13 @@ export default function Home() {
         </div>
       </section>
 
+      <footer className="footer-section" aria-labelledby="footer-title">
+        <h2 id="footer-title">Reach Out</h2>
+        <a className="footer-button" href="mailto:MelosClaw@gasgpt.com">
+          <Mail size={18} aria-hidden="true" />
+          Inquiry
+        </a>
+      </footer>
     </main>
   );
 }
